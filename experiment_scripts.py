@@ -119,7 +119,7 @@ def meanshift_seg_opt2_5D_preproc(im, radius, c, blurType):
     data = cv2.cvtColor(data, cv2.COLOR_RGB2LAB)
     data = reshape_image(data, DIMENSION.D5)
 
-    start_time = getCurrTime()    
+    start_time = getCurrTime()
     data, peaks, labels, = execute_meanshift_opt_2(data, radius, c)
     end_time = getCurrTime()
     compute_time = computeTime(start_time, end_time)

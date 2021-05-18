@@ -2,6 +2,10 @@ import sys
 from experiments import *
 from argparse import ArgumentParser
 
+'''
+This file handles the input provided by the user and takes action accordingly.
+'''
+
 image_path = input("Enter the image path(including extension): \n")
 radius = int(input("Enter the radius, default=10 \n"))
 c = int(input("Enter the c value, default=2 \n"))
