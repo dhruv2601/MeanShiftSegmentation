@@ -6,12 +6,14 @@ from argparse import ArgumentParser
 This file handles the input provided by the user and takes action accordingly.
 '''
 
-image_path = input("Enter the image path(including extension): \n")
+image_path = input("Enter the image path(including extension), ex: data/big_ben.jpeg: \n")
 radius = int(input("Enter the radius, default=10 \n"))
 c = int(input("Enter the c value, default=2 \n"))
 dimension = int(input("Enter the dimension, 3 or 5: \n"))
 blurType = int(input("Enter preprocessing type: 1 for Gauss, 2 for Median, 0 for no preprocessing: \n"))
 outputName = input("Enter output name of segmented image: \n")
+
+print('\nWorking hard on processing your output...')
 
 if not radius:
     radius = int(10)
