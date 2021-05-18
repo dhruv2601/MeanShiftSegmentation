@@ -12,6 +12,14 @@
     * Pre-processing Utils
     * Miscellaneous Utils
 
+- [experiment_scripts.py](experiment_scripts.py): Holds all the ready to use experiments scripts, connects functions from [experiments.py](experimentss.py)
+    * Experiment set 1 - 
+        * pts.mat with vanilla meanshift algoritm
+        * pts.mat with meanshift optimisation 1 algoritm
+        * pts.mat with meanshift optimisation 2 algoritm.
+    * Experiment set 2 - Experiment different images with second optimisation - without pre-processing.
+    * Experiment set 3 - Experiment different images with second optimisation - with pre-processing - primarily image smoothing.
+
 - [vanilla_algorithm.py](vannila_algorithm.py): Simplest implementation of find_peak and mean_shift.
 
 - [optimisation_one.py](optimisation_one.py): 
@@ -21,4 +29,3 @@
 - [optimisation_two.py](optimisation_two.py)
     * find_peak_opt_two() implements search path space and convergence of similar points in the space in a single peak, thus saving iterations and computation time.
     * Similar implementation of mean_shift_opt_2() as done in first optimisation.
-
